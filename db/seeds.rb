@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+cocktails_attributes = [
+  {
+    name:         "mojito",
+
+  },
+  {
+    name:         "cubalibre",
+
+  },
+  {
+    name:         "sexnakedonthebeach",
+
+  }
+]
+cocktails_attributes.each { |params| Cocktail.create!(params) }

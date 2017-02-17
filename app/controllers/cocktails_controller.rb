@@ -53,6 +53,6 @@ class CocktailsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def cocktail_params
-      params.fetch(:cocktail, {})
+      params.require(:cocktail).permit(:name)
     end
 end
